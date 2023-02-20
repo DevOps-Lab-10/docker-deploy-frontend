@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  frontend:
+    image: kopma65/234-deploy-frontend:lastest
+    ports:
+      - "8086:80"
+      
