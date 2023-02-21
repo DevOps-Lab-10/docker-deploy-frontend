@@ -24,7 +24,7 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
       -
         name: prepare the docker-compose run
-        run: 
+        run: |
              ls -l
       -
         name: Build and push
@@ -35,7 +35,7 @@ jobs:
           tags: kopma65/234-deploylab-frontend:lastest
       -
         name: prepare the docker-compose run
-        run:
+        run: |
             mkdir 234-deploylab-fronted
             cp docker-compose.yml 234-deploylab-fronted/docker-compose.yml
             cd 234-deploylab-fronted
